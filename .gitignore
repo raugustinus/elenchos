@@ -1,0 +1,17 @@
+# Gradle
+.gradle/
+.kotlin/
+build/
+**/build/
+
+# secrets / local config — never committed
+*.env
+!*.example.env
+
+# reports produced by a run
+elenchos-report/
+
+# IDE
+.idea/
+
+.DS_Store

@@ -1,0 +1,32 @@
+# REUSE 3.2 configuration (https://reuse.software).
+# Covers files that don't carry an inline SPDX header: build scripts, config,
+# docs, and the third-party Gradle wrapper. The .kt sources carry their own
+# headers; build/, .gradle/, *.env and elenchos-report/ are gitignored.
+version = 1
+
+# --- Our own non-source files ------------------------------------------------
+[[annotations]]
+path = [
+  "**/*.gradle.kts",
+  "gradle.properties",
+  "engine/src/test/resources/**",
+  ".gitignore",
+  ".sdkmanrc",
+  "README.md",
+  "NOTICE",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 CodeFactoring B.V."
+SPDX-License-Identifier = "Apache-2.0"
+
+# --- Third-party: the Gradle wrapper (vendored, Apache-2.0) -------------------
+[[annotations]]
+path = [
+  "gradlew",
+  "gradlew.bat",
+  "gradle/wrapper/gradle-wrapper.jar",
+  "gradle/wrapper/gradle-wrapper.properties",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Gradle, Inc."
+SPDX-License-Identifier = "Apache-2.0"

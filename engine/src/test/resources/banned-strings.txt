@@ -1,0 +1,29 @@
+# Strings that must never appear in this repository: names and shapes of
+# specific backends, gateways, identity products, auth flows and standards
+# catalogues. The library is an abstraction and must not know any of them.
+#
+# One case-insensitive regular expression per line; '#' starts a comment.
+# BannedStringsTest fails the build on any match in any file other than this one.
+
+supabase
+postgrest
+gotrue
+\bkong\b
+\brls\b
+row[- ]level[- ]security
+\basvs\b
+\bowasp\b
+\bentra\b
+\bazure\b
+microsoft[ .]graph|graph\.microsoft
+sharepoint
+\bjwts?\b
+\boauth2?\b
+\boidc\b
+\bsaml\b
+\bapikey\b
+\banon\b|anon[_ -]?key
+service_role
+/rest/v1|/auth/v1
+grant_type
+return=representation

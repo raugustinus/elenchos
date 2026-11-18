@@ -1,0 +1,3 @@
+# Build with JDK 21 (the code targets JVM 21). Run `sdk env` to switch.
+# Note: the Gradle wrapper (9.9.1) also runs on JDK 24.
+java=21.0.6-tem
